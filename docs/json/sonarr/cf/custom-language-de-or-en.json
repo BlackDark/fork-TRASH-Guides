@@ -1,0 +1,29 @@
+{
+  "trash_id": "custom-de-or-org",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_description": "Language: Prefer German but i'll take English",
+  "name": "Language: Not German or English",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not German",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "Not English",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 1
+      }
+    }
+  ]
+}
