@@ -1,0 +1,39 @@
+{
+  "trash_id": "custom-size-more-40gb",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_description": "Size: Block sizes over 40GB",
+  "name": "Size: Block >40GB",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Size",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": false,
+      "fields": [
+        {
+          "order": 0,
+          "name": "min",
+          "label": "Minimum Size",
+          "unit": "GB",
+          "helpText": "Release must be greater than this size",
+          "value": 15,
+          "type": "number",
+          "advanced": false
+        },
+        {
+          "order": 1,
+          "name": "max",
+          "label": "Maximum Size",
+          "unit": "GB",
+          "helpText": "Release must be less than or equal to this size",
+          "value": 40,
+          "type": "number",
+          "advanced": false
+        }
+      ]
+    }
+  ]
+}
